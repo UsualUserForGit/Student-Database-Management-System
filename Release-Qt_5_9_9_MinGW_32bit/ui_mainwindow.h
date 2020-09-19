@@ -41,6 +41,7 @@ public:
     QPushButton *Delete_button;
     QPushButton *Change_button;
     QPushButton *Add_button;
+    QLabel *Info_lablel;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -53,7 +54,7 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         label = new QLabel(centralwidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(449, 50, 300, 60));
+        label->setGeometry(QRect(449, 50, 300, 30));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -73,13 +74,13 @@ public:
         Result_widget->setGeometry(QRect(300, 120, 600, 430));
         Show_all_button = new QPushButton(Result_widget);
         Show_all_button->setObjectName(QStringLiteral("Show_all_button"));
-        Show_all_button->setGeometry(QRect(140, 60, 300, 70));
+        Show_all_button->setGeometry(QRect(140, 60, 300, 100));
         Show_student_button = new QPushButton(Result_widget);
         Show_student_button->setObjectName(QStringLiteral("Show_student_button"));
-        Show_student_button->setGeometry(QRect(140, 195, 300, 70));
+        Show_student_button->setGeometry(QRect(140, 180, 300, 100));
         Back_button_1 = new QPushButton(Result_widget);
         Back_button_1->setObjectName(QStringLiteral("Back_button_1"));
-        Back_button_1->setGeometry(QRect(140, 330, 300, 70));
+        Back_button_1->setGeometry(QRect(140, 300, 300, 100));
         Menu_widget = new QWidget(centralwidget);
         Menu_widget->setObjectName(QStringLiteral("Menu_widget"));
         Menu_widget->setGeometry(QRect(300, 120, 600, 430));
@@ -108,7 +109,18 @@ public:
         Add_button = new QPushButton(Edit_widget);
         Add_button->setObjectName(QStringLiteral("Add_button"));
         Add_button->setGeometry(QRect(140, 50, 300, 70));
+        Info_lablel = new QLabel(centralwidget);
+        Info_lablel->setObjectName(QStringLiteral("Info_lablel"));
+        Info_lablel->setGeometry(QRect(448, 105, 305, 20));
+        sizePolicy.setHeightForWidth(Info_lablel->sizePolicy().hasHeightForWidth());
+        Info_lablel->setSizePolicy(sizePolicy);
+        Info_lablel->setAlignment(Qt::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
+        label->raise();
+        Menu_widget->raise();
+        Result_widget->raise();
+        Edit_widget->raise();
+        Info_lablel->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
         menubar->setGeometry(QRect(0, 0, 1200, 25));
@@ -136,6 +148,7 @@ public:
         Delete_button->setText(QApplication::translate("MainWindow", "Delete student", Q_NULLPTR));
         Change_button->setText(QApplication::translate("MainWindow", "Change student", Q_NULLPTR));
         Add_button->setText(QApplication::translate("MainWindow", "Add student", Q_NULLPTR));
+        Info_lablel->setText(QString());
     } // retranslateUi
 
 };

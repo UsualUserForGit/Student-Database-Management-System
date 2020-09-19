@@ -53,7 +53,7 @@ public:
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         wrng_msg_label = new QLabel(Edit_window);
         wrng_msg_label->setObjectName(QStringLiteral("wrng_msg_label"));
-        wrng_msg_label->setGeometry(QRect(90, 60, 330, 20));
+        wrng_msg_label->setGeometry(QRect(90, 140, 330, 20));
         wrng_msg_label->setAlignment(Qt::AlignCenter);
         widget = new QWidget(Edit_window);
         widget->setObjectName(QStringLiteral("widget"));

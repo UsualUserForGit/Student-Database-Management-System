@@ -4,13 +4,13 @@ INPUT(
 ./release\lineedit_delegate.o
 ./release\main.o
 ./release\mainwindow.o
-./release\mylineedit.o
 ./release\mytablewidget.o
+./release\result_window.o
 ./release\spinbox_delegate.o
 ./release\moc_edit_window.o
 ./release\moc_lineedit_delegate.o
 ./release\moc_mainwindow.o
-./release\moc_mylineedit.o
 ./release\moc_mytablewidget.o
+./release\moc_result_window.o
 ./release\moc_spinbox_delegate.o
 );
