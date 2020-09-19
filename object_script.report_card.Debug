@@ -1,0 +1,16 @@
+INPUT(
+./debug\edit_window.o
+./debug\global_data.o
+./debug\lineedit_delegate.o
+./debug\main.o
+./debug\mainwindow.o
+./debug\mylineedit.o
+./debug\mytablewidget.o
+./debug\spinbox_delegate.o
+./debug\moc_edit_window.o
+./debug\moc_lineedit_delegate.o
+./debug\moc_mainwindow.o
+./debug\moc_mylineedit.o
+./debug\moc_mytablewidget.o
+./debug\moc_spinbox_delegate.o
+);
